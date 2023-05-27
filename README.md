@@ -1,1 +1,1 @@
-#Library management system
+#Repository for the development of the application 
