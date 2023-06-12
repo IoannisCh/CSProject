@@ -1,1 +1,1 @@
-#Repository for the development of the application 
+#Repository for the development of the Web Browser
