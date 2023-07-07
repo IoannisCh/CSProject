@@ -1,5 +1,5 @@
-#include <gtkmm.h>
-#include <webkit2/webkit2.h>
+#include "gtk/gtk.h>
+#include "webkit/webkit.h"
 
 int main(int argc, char *argv[]) {
     // Initialize GTKmm
