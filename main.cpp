@@ -1,4 +1,4 @@
-#include "gtk/gtk.h>
+#include "gtk/gtk.h"
 #include "webkit/webkit.h"
 
 int main(int argc, char *argv[]) {

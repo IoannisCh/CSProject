@@ -2,5 +2,6 @@
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
     "python.analysis.extraPaths": [
         "./WebKit/Tools/flatpak"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }
