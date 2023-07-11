@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 
     // Create a WebView widget
     WebKitWebView* webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
-    webView->load_uri("https://www.example.com");
+    webView->load_uri("https://www.google.com");
 
     // Add the WebView to the window
     window.add(*GTK_WIDGET(webView));
