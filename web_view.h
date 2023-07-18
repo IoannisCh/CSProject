@@ -2,7 +2,7 @@
 #define WEB_VIEW_H
 
 #include <gtk/gtk.h>
-#include <webkit2/webkit.h>
+#include <webkit/webkit.h>
 
 class WebView{
     public:
