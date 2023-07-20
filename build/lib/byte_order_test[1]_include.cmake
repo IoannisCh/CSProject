@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/byte_order_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/byte_order_test[1]_tests.cmake")
+else()
+  add_test(byte_order_test_NOT_BUILT byte_order_test_NOT_BUILT)
+endif()

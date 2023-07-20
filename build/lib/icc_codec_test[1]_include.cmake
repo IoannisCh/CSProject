@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/icc_codec_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/icc_codec_test[1]_tests.cmake")
+else()
+  add_test(icc_codec_test_NOT_BUILT icc_codec_test_NOT_BUILT)
+endif()

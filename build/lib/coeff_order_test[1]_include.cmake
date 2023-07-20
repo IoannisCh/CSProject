@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/coeff_order_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/coeff_order_test[1]_tests.cmake")
+else()
+  add_test(coeff_order_test_NOT_BUILT coeff_order_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/enc_external_image_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/enc_external_image_test[1]_tests.cmake")
+else()
+  add_test(enc_external_image_test_NOT_BUILT enc_external_image_test_NOT_BUILT)
+endif()

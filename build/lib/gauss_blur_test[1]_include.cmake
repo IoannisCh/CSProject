@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/gauss_blur_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/gauss_blur_test[1]_tests.cmake")
+else()
+  add_test(gauss_blur_test_NOT_BUILT gauss_blur_test_NOT_BUILT)
+endif()

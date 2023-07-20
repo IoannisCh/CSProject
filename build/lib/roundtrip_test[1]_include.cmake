@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/roundtrip_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/roundtrip_test[1]_tests.cmake")
+else()
+  add_test(roundtrip_test_NOT_BUILT roundtrip_test_NOT_BUILT)
+endif()

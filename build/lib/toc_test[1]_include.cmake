@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/toc_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/toc_test[1]_tests.cmake")
+else()
+  add_test(toc_test_NOT_BUILT toc_test_NOT_BUILT)
+endif()

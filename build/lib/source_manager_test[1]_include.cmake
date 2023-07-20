@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/source_manager_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/source_manager_test[1]_tests.cmake")
+else()
+  add_test(source_manager_test_NOT_BUILT source_manager_test_NOT_BUILT)
+endif()

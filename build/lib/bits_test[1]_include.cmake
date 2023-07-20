@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/bits_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/bits_test[1]_tests.cmake")
+else()
+  add_test(bits_test_NOT_BUILT bits_test_NOT_BUILT)
+endif()

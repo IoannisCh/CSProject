@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/jxl_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/jxl_test[1]_tests.cmake")
+else()
+  add_test(jxl_test_NOT_BUILT jxl_test_NOT_BUILT)
+endif()

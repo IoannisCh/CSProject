@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/quant_weights_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/quant_weights_test[1]_tests.cmake")
+else()
+  add_test(quant_weights_test_NOT_BUILT quant_weights_test_NOT_BUILT)
+endif()

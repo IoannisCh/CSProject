@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/encode_api_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/encode_api_test[1]_tests.cmake")
+else()
+  add_test(encode_api_test_NOT_BUILT encode_api_test_NOT_BUILT)
+endif()

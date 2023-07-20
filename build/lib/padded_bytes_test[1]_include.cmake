@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/padded_bytes_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/padded_bytes_test[1]_tests.cmake")
+else()
+  add_test(padded_bytes_test_NOT_BUILT padded_bytes_test_NOT_BUILT)
+endif()

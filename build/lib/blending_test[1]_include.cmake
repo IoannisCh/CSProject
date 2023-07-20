@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/blending_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/blending_test[1]_tests.cmake")
+else()
+  add_test(blending_test_NOT_BUILT blending_test_NOT_BUILT)
+endif()

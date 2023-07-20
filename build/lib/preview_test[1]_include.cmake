@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/preview_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/preview_test[1]_tests.cmake")
+else()
+  add_test(preview_test_NOT_BUILT preview_test_NOT_BUILT)
+endif()

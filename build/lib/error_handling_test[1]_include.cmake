@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/error_handling_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/error_handling_test[1]_tests.cmake")
+else()
+  add_test(error_handling_test_NOT_BUILT error_handling_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/splines_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/splines_test[1]_tests.cmake")
+else()
+  add_test(splines_test_NOT_BUILT splines_test_NOT_BUILT)
+endif()

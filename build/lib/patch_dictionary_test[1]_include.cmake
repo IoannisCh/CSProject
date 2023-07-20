@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/patch_dictionary_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/patch_dictionary_test[1]_tests.cmake")
+else()
+  add_test(patch_dictionary_test_NOT_BUILT patch_dictionary_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/xorshift128plus_test[1]_tests.cmake")
+  include("/home/yiannis/Documents/CSProject/build/lib/xorshift128plus_test[1]_tests.cmake")
+else()
+  add_test(xorshift128plus_test_NOT_BUILT xorshift128plus_test_NOT_BUILT)
+endif()

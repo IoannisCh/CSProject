@@ -1,0 +1,285 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/libjxl_extras_codec-static.a"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_compile_options",
+			"add_definitions"
+		],
+		"files" : 
+		[
+			"lib/jxl_extras.cmake",
+			"lib/CMakeLists.txt",
+			"lib/jxl.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 156,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 159,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 137,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 99,
+				"parent" : 6
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 297,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 361,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 218,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 325,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 313,
+				"parent" : 8
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "sjpeg::@1f2919950f99a63bb7fa"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "jxl_export::@306ed2d68c6501e8728f"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "jxl::@306ed2d68c6501e8728f"
+		},
+		{
+			"id" : "jxl_extras_core-obj::@306ed2d68c6501e8728f"
+		}
+	],
+	"id" : "jxl_extras_codec-static::@306ed2d68c6501e8728f",
+	"name" : "jxl_extras_codec-static",
+	"nameOnDisk" : "libjxl_extras_codec-static.a",
+	"paths" : 
+	{
+		"build" : "lib",
+		"source" : "lib"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/color_description.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/color_hints.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/decode.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/encode.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/exif.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/time.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/apng.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/apng.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/exr.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/exr.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/jpg.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/jpg.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/jxl.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/jxl.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/pgx.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/pgx.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/pnm.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/pnm.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/enc/npy.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/yiannis/Documents/CSProject/build/lib/CMakeFiles/jxl_extras_core-obj.dir/extras/dec/gif.cc.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

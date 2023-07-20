@@ -1,0 +1,198 @@
+Performing C++ SOURCE FILE Test JPEGXL_EMSCRIPTEN failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3b00b && [1/2] Building CXX object CMakeFiles/cmTC_3b00b.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_3b00b.dir/src.cxx.o 
+/usr/bin/g++ -DJPEGXL_EMSCRIPTEN   -o CMakeFiles/cmTC_3b00b.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:3:21: error: static assertion failed: __EMSCRIPTEN__ is not defined
+    3 |       static_assert(false, "__EMSCRIPTEN__ is not defined");
+      |                     ^~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() {
+      #if !defined(__EMSCRIPTEN__)
+      static_assert(false, "__EMSCRIPTEN__ is not defined");
+      #endif
+      return 0;
+    }
+Performing C++ SOURCE FILE Test CXX_FUZZERS_SUPPORTED failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ffe20 && [1/2] Building CXX object CMakeFiles/cmTC_ffe20.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_ffe20.dir/src.cxx.o 
+/usr/bin/g++ -DCXX_FUZZERS_SUPPORTED  -fsanitize=fuzzer-no-link -o CMakeFiles/cmTC_ffe20.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized argument to '-fsanitize=' option: 'fuzzer-no-link'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_CONSTRUCTOR_ALIASES_SUPPORTED failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d77c0 && [1/2] Building CXX object CMakeFiles/cmTC_d77c0.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_d77c0.dir/src.cxx.o 
+/usr/bin/g++ -DCXX_CONSTRUCTOR_ALIASES_SUPPORTED  -Xclang -mconstructor-aliases -o CMakeFiles/cmTC_d77c0.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command-line option '-Xclang'
+g++: error: unrecognized command-line option '-mconstructor-aliases'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test JXL_HWY_DISABLED_TARGETS_FORCED failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_35137 && [1/2] Building CXX object CMakeFiles/cmTC_35137.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_35137.dir/src.cxx.o 
+/usr/bin/g++ -DJXL_HWY_DISABLED_TARGETS_FORCED  -fPIE -o CMakeFiles/cmTC_35137.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:3:21: error: static assertion failed: HWY_DISABLED_TARGETS is not defined
+    3 |       static_assert(false, "HWY_DISABLED_TARGETS is not defined");
+      |                     ^~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() {
+      #if !defined(HWY_DISABLED_TARGETS)
+      static_assert(false, "HWY_DISABLED_TARGETS is not defined");
+      #endif
+      return 0;
+    }
+Performing C++ SOURCE FILE Test HWY_EMSCRIPTEN failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6b7da && [1/2] Building CXX object CMakeFiles/cmTC_6b7da.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_6b7da.dir/src.cxx.o 
+/usr/bin/g++ -DHWY_EMSCRIPTEN  -fno-rtti -funwind-tables -fno-omit-frame-pointer  -fPIE -std=c++11 -o CMakeFiles/cmTC_6b7da.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:3:21: error: static assertion failed: __EMSCRIPTEN__ is not defined
+    3 |       static_assert(false, "__EMSCRIPTEN__ is not defined");
+      |                     ^~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() {
+      #if !defined(__EMSCRIPTEN__)
+      static_assert(false, "__EMSCRIPTEN__ is not defined");
+      #endif
+      return 0;
+    }
+Performing C++ SOURCE FILE Test HWY_RISCV failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_92ba2 && [1/2] Building CXX object CMakeFiles/cmTC_92ba2.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_92ba2.dir/src.cxx.o 
+/usr/bin/g++ -DHWY_RISCV  -fno-rtti -funwind-tables -fno-omit-frame-pointer  -fPIE -std=c++11 -o CMakeFiles/cmTC_92ba2.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:3:21: error: static assertion failed: __riscv is not defined
+    3 |       static_assert(false, "__riscv is not defined");
+      |                     ^~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() {
+      #if !defined(__riscv)
+      static_assert(false, "__riscv is not defined");
+      #endif
+      return 0;
+    }
+Determining if the include file asm/hwcap.h exists failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_60a3c && [1/2] Building C object CMakeFiles/cmTC_60a3c.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_60a3c.dir/CheckIncludeFile.c.o 
+/usr/bin/gcc   -fPIE -o CMakeFiles/cmTC_60a3c.dir/CheckIncludeFile.c.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: asm/hwcap.h: No such file or directory
+    1 | #include <asm/hwcap.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test BROTLI_EMSCRIPTEN failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_48d4a && [1/2] Building C object CMakeFiles/cmTC_48d4a.dir/src.c.o
+[2/2] Linking C executable cmTC_48d4a
+FAILED: cmTC_48d4a 
+: && /usr/bin/gcc   CMakeFiles/cmTC_48d4a.dir/src.c.o -o cmTC_48d4a   && :
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#if defined(__EMSCRIPTEN__)
+   int main() {return 0;}
+   #endif
+Determining if the function log2 exists failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_93694 && [1/2] Building C object CMakeFiles/cmTC_93694.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘log2’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:1:1: note: ‘log2’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_93694
+FAILED: cmTC_93694 
+: && /usr/bin/gcc -DCHECK_FUNCTION_EXISTS=log2  CMakeFiles/cmTC_93694.dir/CheckFunctionExists.c.o -o cmTC_93694   && :
+/usr/bin/ld: CMakeFiles/cmTC_93694.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `log2'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___ARM_NEON__ failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1677d && [1/2] Building CXX object CMakeFiles/cmTC_1677d.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_1677d.dir/src.cxx.o 
+/usr/bin/g++ -DSJPEG_HAVE_FLAG___ARM_NEON__  -fno-rtti -funwind-tables -fno-omit-frame-pointer    -fPIE -std=c++11 -o CMakeFiles/cmTC_1677d.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:4:9: error: invalid use of ‘this’ in non-member function
+    4 |         this is not valid code
+      |         ^~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__ARM_NEON__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___ARM_NEON__ failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6894b && [1/2] Building CXX object CMakeFiles/cmTC_6894b.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_6894b.dir/src.cxx.o 
+/usr/bin/g++ -DSJPEG_HAVE_FLAG___ARM_NEON__  -fno-rtti -funwind-tables -fno-omit-frame-pointer   -mfpu=neon -fPIE -std=c++11 -o CMakeFiles/cmTC_6894b.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command-line option ‘-mfpu=neon’
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__ARM_NEON__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
