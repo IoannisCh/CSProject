@@ -33,8 +33,8 @@
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
-            "cStandard": "c17",
-            "cppStandard": "c++14",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-x64",
             "compilerArgs": [
                 "-Wall",
@@ -44,7 +44,7 @@
                 "`pkg-config gtk+-3.0 --cflags`",
                 "`pkg-config --libs gtk+-3.0`",
                 "-lm"
-              ]
+            ]
         }
     ],
     "version": 4

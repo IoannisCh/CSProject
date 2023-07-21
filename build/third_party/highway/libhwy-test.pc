@@ -6,6 +6,6 @@ includedir=${prefix}/include
 Name: libhwy-test
 Description: Efficient and performance-portable SIMD wrapper, test helpers.
 Requires: gtest
-Version: 1.12.1
+Version: 
 Libs: -L${libdir} -lhwy_test
 Cflags: -I${includedir}
