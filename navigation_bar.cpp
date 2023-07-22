@@ -8,12 +8,13 @@ NavigationBar::~NavigationBar(){
 }
 
 void NavigationBar::create(){
-    toolbar = gtk_create_new();
+    gchar* label = g_strdup ("Test");
+    toolbar = gtk_frame_new(label);
     gtk_toolbar_set_show_arrow(GTK_TOOLBAR(toolbar), TRUE);
 
-    bookmarkButton.create();
+    //bookmarkButton.create();
 
-    gtk_container_add(GTK_CONTAINER(toolbar), bookmarkButton.getWdiget());  
+    //gtk_container_add(GTK_CONTAINER(toolbar), bookmarkButton.getWdiget());  
 }
 
 GtkWidget* NavigationBar::getWidget() const {

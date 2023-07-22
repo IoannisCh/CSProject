@@ -4,8 +4,8 @@
 #include <gtk/gtk.h>
 #include <webkit2/webkit2.h>
 #include <vector>
-#include <navigation_bar.h>
-#include <web_view.h>
+#include "navigation_bar.h"
+#include "web_view.h"
 
 class BrowserWindow{
     public:
@@ -14,7 +14,7 @@ class BrowserWindow{
         void create();
 
     private:
-        GTkWidget* window;
+        GtkWidget* window;
         NavigationBar navigationBar;
         WebView* webView;
 };

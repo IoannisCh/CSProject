@@ -1,5 +1,5 @@
-#include "gtk/gtk.h"
-#include "webkit/webkit.h"
+#include <gtk/gtk.h>
+#include <webkit2/webkit2.h>
 
 int main(int argc, char *argv[]) {
     // Initialize GTK
@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     webkit_web_view_load_uri(webView, "https://www.google.com");
 
     // Add the WebView to the window
-    window.add(*GTK_WIDGET(webView));
+    //window.addWidget(GTK_WIDGET(webView));
 
     // Show the window
     gtk_widget_show_all(window);

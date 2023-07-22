@@ -2,7 +2,7 @@
 #define WEB_VIEW_H
 
 #include <gtk/gtk.h>
-#include <webkit/webkit.h>
+#include <webkit2/webkit2.h>
 
 class WebView{
     public:
@@ -12,7 +12,7 @@ class WebView{
         GtkWidget* getWidget() const;
 
     private:
-        WebkitWebView* webView;
+        WebKitWebView* webView;
 
         static void onTitleChanged(WebKitWebView* webView, GParamSpec* pspec, GtkWidget* title);
 };

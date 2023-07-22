@@ -5,19 +5,20 @@
 #include <webkit2/webkit2.h>
 #include <vector>
 
-class Bookmark{
+class WebkitWebView;
+
+class BookmarkButton{
     public:
     BookmarkButton();
     ~BookmarkButton();
     void create();
-    GtkWidget* getWidget(); const;
+    GtkWidget* getWidget() const;
+    
+    //static void onButtonClicked(GtkButton* button, WebkitWebView* webview);
 
     private:
 
-    GtkWidget* button;
-
-    static void onButtonClicked(GtkButton* button, WebkitWebView* webview);
-
+    GtkWidget* button; 
 };
 
 #endif // BOOKMARK_BUTTON_H
