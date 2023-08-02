@@ -28,7 +28,6 @@ void BrowserWindow::create()
 
 
     GtkWidget* vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-    // KZ commented
     //gtk_container.addWidget(GTK_CONTAINER(window), vbox);
     gtk_box_pack_start(GTK_BOX(vbox), mainBox, TRUE, TRUE, 0);
 
