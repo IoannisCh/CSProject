@@ -2527,7 +2527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.6()]"
+			"value" : "[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.12()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",

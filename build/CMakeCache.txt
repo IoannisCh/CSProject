@@ -1059,7 +1059,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpng.so][
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Python
-FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.6()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB

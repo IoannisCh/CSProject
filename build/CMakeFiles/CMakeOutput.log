@@ -669,3 +669,35 @@ Source file was:
         return 0;
       }
     
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___SSE2__ succeeded with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_86375 && [1/2] Building CXX object CMakeFiles/cmTC_86375.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_86375
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__SSE2__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___SSE2__ succeeded with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e2a11 && [1/2] Building CXX object CMakeFiles/cmTC_e2a11.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e2a11
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__SSE2__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
