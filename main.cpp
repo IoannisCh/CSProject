@@ -1,4 +1,3 @@
-#include <gtk/gtk.h>
 /*
     <Web browser>
     Copyright (C) <2023>  <IoannisCh>
@@ -16,6 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+#include <gtk/gtk.h>
 #include <webkit2/webkit2.h>
 
 int main(int argc, char *argv[]) {
