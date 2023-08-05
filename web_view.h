@@ -14,7 +14,7 @@ class WebView{
     private:
         WebKitWebView* webView;
 
-        static void onTitleChanged(WebKitWebView* webView, GParamSpec* pspec, GtkWidget* title);
+        static void titleChanged(WebKitWebView* webView, GParamSpec* pspec, GtkWidget* title);
 };
 
 #endif // WEB_VIEW_H

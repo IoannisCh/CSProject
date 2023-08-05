@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Linux-g++"
-	BuildStamp="20230804-1738-Experimental"
+	BuildStamp="20230805-1912-Experimental"
 	Name="yiannis-GL62-6QD"
 	Generator="ctest-3.22.1"
 	CompilerName="/usr/bin/g++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="2047"
 	TotalPhysicalMemory="15897"
 	LogicalProcessorsPerPhysical="1"
-	ProcessorClockFrequency="1000"
+	ProcessorClockFrequency="999.999"
 	>
 	<Testing>
-		<StartDateTime>Aug 05 00:20 BST</StartDateTime>
-		<StartTestTime>1691191215</StartTestTime>
+		<StartDateTime>Aug 05 20:12 BST</StartDateTime>
+		<StartTestTime>1691262736</StartTestTime>
 		<TestList/>
-		<EndDateTime>Aug 05 00:20 BST</EndDateTime>
-		<EndTestTime>1691191215</EndTestTime>
+		<EndDateTime>Aug 05 20:12 BST</EndDateTime>
+		<EndTestTime>1691262736</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

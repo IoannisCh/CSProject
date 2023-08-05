@@ -16,7 +16,10 @@ class BrowserWindow{
     private:
         GtkWidget* window;
         NavigationBar navigationBar;
-        WebView* webView;
+        WebView webView;
+
+        static void killWindow(GtkWidget* widget, GtkWidget* window);
+        static gboolean killWebView(WebView* webView, GtkWidget* window);
 };
 
 #endif // BROWSER_WINDOW_H

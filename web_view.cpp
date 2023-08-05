@@ -27,9 +27,11 @@ WebView::~WebView() {
 }
 
 void WebView::create() {
+
+    // Initialise browser view
     webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
-    webkit_web_view_load_uri(webView, "https://www.google.com");
-    g_signal_connect(webView, "notify::title", G_CALLBACK(onTitleChanged), nullptr);
+    webkit_web_view_load_uri(webView, "https://www.bbc.com");
+    g_signal_connect(webView, "notify::title", G_CALLBACK(titleChanged), nullptr);
 }
 
 GtkWidget* WebView::getWidget() const 
@@ -37,7 +39,7 @@ GtkWidget* WebView::getWidget() const
     return GTK_WIDGET(webView);
 }
 
-void WebView::onTitleChanged(WebKitWebView* webView, GParamSpec* pspec, GtkWidget* title){
+void WebView::titleChanged(WebKitWebView* webView, GParamSpec* pspec, GtkWidget* title){
     const gchar* pageTitle = webkit_web_view_get_title(webView);
     gtk_label_set_text(GTK_LABEL(title), pageTitle);
 }

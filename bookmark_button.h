@@ -14,11 +14,11 @@ class BookmarkButton{
     void create();
     GtkWidget* getWidget() const;
     
-    //static void onButtonClicked(GtkButton* button, WebkitWebView* webview);
-
     private:
 
     GtkWidget* button; 
+    
+    static void buttonClicked(GtkButton* button, WebKitWebView* webView);
 };
 
 #endif // BOOKMARK_BUTTON_H

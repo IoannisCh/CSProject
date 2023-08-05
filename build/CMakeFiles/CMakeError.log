@@ -524,3 +524,85 @@ Source file was:
         return 0;
       }
     
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___ARM_NEON__ failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f7b1b && [1/2] Building CXX object CMakeFiles/cmTC_f7b1b.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_f7b1b.dir/src.cxx.o 
+/usr/bin/g++ -DSJPEG_HAVE_FLAG___ARM_NEON__  -fno-rtti -funwind-tables -fno-omit-frame-pointer    -fPIE -std=c++11 -o CMakeFiles/cmTC_f7b1b.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:4:9: error: invalid use of ‘this’ in non-member function
+    4 |         this is not valid code
+      |         ^~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__ARM_NEON__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___ARM_NEON__ failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_936f9 && [1/2] Building CXX object CMakeFiles/cmTC_936f9.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_936f9.dir/src.cxx.o 
+/usr/bin/g++ -DSJPEG_HAVE_FLAG___ARM_NEON__  -fno-rtti -funwind-tables -fno-omit-frame-pointer   -mfpu=neon -fPIE -std=c++11 -o CMakeFiles/cmTC_936f9.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command-line option ‘-mfpu=neon’
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__ARM_NEON__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___ARM_NEON__ failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c3caa && [1/2] Building CXX object CMakeFiles/cmTC_c3caa.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_c3caa.dir/src.cxx.o 
+/usr/bin/g++ -DSJPEG_HAVE_FLAG___ARM_NEON__  -fno-rtti -funwind-tables -fno-omit-frame-pointer    -fPIE -std=c++11 -o CMakeFiles/cmTC_c3caa.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx:4:9: error: invalid use of ‘this’ in non-member function
+    4 |         this is not valid code
+      |         ^~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__ARM_NEON__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C++ SOURCE FILE Test SJPEG_HAVE_FLAG___ARM_NEON__ failed with the following output:
+Change Dir: /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ce49c && [1/2] Building CXX object CMakeFiles/cmTC_ce49c.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_ce49c.dir/src.cxx.o 
+/usr/bin/g++ -DSJPEG_HAVE_FLAG___ARM_NEON__  -fno-rtti -funwind-tables -fno-omit-frame-pointer   -mfpu=neon -fPIE -std=c++11 -o CMakeFiles/cmTC_ce49c.dir/src.cxx.o -c /home/yiannis/Documents/CSProject/build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command-line option ‘-mfpu=neon’
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      int main(void) {
+        #if !defined(__ARM_NEON__)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    

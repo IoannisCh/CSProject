@@ -29,7 +29,7 @@ BookmarkButton::~BookmarkButton(){
 void BookmarkButton::create()
 {
     button = gtk_button_new_with_label("Bookmark");
-    //g_signal_connect(G_OBJECT(button), "clicked", G_CALLBACK(onButtonClicked), nullptr);
+    g_signal_connect(G_OBJECT(button), "clicked", G_CALLBACK(buttonClicked), nullptr);
 }
 
 GtkWidget* BookmarkButton::getWidget() const
@@ -37,10 +37,8 @@ GtkWidget* BookmarkButton::getWidget() const
     return button;
 }
 
-/*
-void BookmarkButton::onButtonClicked(GTkButton* button, WebKitWebView* webView)
+void BookmarkButton::buttonClicked(GtkButton* button, WebKitWebView* webView)
 {
     const gchar* currentUri = webkit_web_view_get_uri(webView);
     g_print("Bookmark added: %s\n", currentUri);
 }
-*/

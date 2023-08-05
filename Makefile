@@ -1,63 +1,27 @@
-########################################################################
-####################### Makefile Template ##############################
-########################################################################
-
-# Compiler settings - Can be customized.
-CC = g++
-CXXFLAGS = -std=c++11 -Wall
+CC=g++ -Wall
+CLANG = -std=c++14 -O3
+CCACHE=ccache
 GTK=`pkg-config gtk+-3.0 --cflags`
+GTKMM=`pkg-config gtkmm-3.0 --cflags --libs`
 WEBKITGTK=`pkg-config webkit2gtk-4.0 --cflags --libs`
-LDFLAGS = 
+#~ SQLITE=`pkg-config sqlite3 --cflags --libs` 
+SQLITE=-lsqlite3
+FILESYS=-lstdc++fs
+BOOST=-lboost_filesystem -lboost_system
 
-# Makefile settings - Can be customized.
-APPNAME = CSProject
-EXT = .cpp
-SRCDIR = /home/yiannis/Documents/CSProject
-OBJDIR = obj
-
-############## Do not change anything from here downwards! #############
-SRC = $(wildcard $(SRCDIR)/*$(EXT))
-#OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
+SRC=main.cpp browser_window.cpp web_view.cpp navigation_bar.cpp bookmark_button.cpp
 OBJ=$(SRC:.cpp=.o)
-DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
-# UNIX-based OS variables & settings
-RM = rm
-DELOBJ = $(OBJ)
-# Windows OS variables & settings
-DEL = del
-EXE = .exe
-WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 
-########################################################################
-####################### Targets beginning here #########################
-########################################################################
+EXE=RaCoon
 
-all: $(APPNAME)
+# 'game' executable
+all: $(EXE)
 
-$(APPNAME) : $(OBJ)
-	$(CC) $(CXXFLAGS) $(OBJ) -o $@ $(WEBKITGTK) $(GTKMM) $(GTK) $(FILESYS) 
+$(EXE) : $(OBJ)
+	$(CC) $(CLANG) $(OBJ) -o $@ $(WEBKITGTK) $(GTKMM) $(GTK) $(SQLITE) $(FILESYS) 
 	
 .cpp.o:
-	$(CC) $(CXXFLAGS) -c $< -o $@ $(WEBKITGTK) $(GTKMM) $(GTK) $(FILESYS)
-
-################### Cleaning rules for Unix-based OS ###################
-# Cleans complete project
-.PHONY: clean
+	$(CC) $(CLANG) -c $< -o $@ $(WEBKITGTK) $(GTKMM) $(GTK) $(SQLITE) $(FILESYS)
+	
 clean:
-	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
-
-# Cleans only all files with the extension .d
-.PHONY: cleandep
-cleandep:
-	$(RM) $(DEP)
-
-#################### Cleaning rules for Windows OS #####################
-# Cleans complete project
-.PHONY: cleanw
-cleanw:
-	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
-
-# Cleans only all files with the extension .d
-.PHONY: cleandepw
-cleandepw:
-	$(DEL) $(DEP)
+	rm *.o $(EXE)

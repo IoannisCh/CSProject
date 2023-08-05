@@ -4,7 +4,8 @@
 #include <gtk/gtk.h>
 #include <webkit2/webkit2.h>
 #include <vector>
-//#include <bookmark_button.h>
+#include "navigation_bar.h"
+#include "bookmark_button.h"
 
 class NavigationBar {
     public:
@@ -15,7 +16,13 @@ class NavigationBar {
 
     private:
         GtkWidget* toolbar;
-        //BookmarkButton* bookmarkButton;
+        BookmarkButton bookmarkButton;
+
+        GtkToolItem *newTb;
+        GtkToolItem *openTb;
+        GtkToolItem *saveTb;
+        GtkToolItem *sep;
+        GtkToolItem *exitTb;
 };
 
 #endif // NAVIGATION_BAR_H
