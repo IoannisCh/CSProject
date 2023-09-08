@@ -30,6 +30,7 @@
 /home/yiannis/Documents/CSProject/build/CMakeFiles/decode_oneshot.dir
 /home/yiannis/Documents/CSProject/build/CMakeFiles/decode_progressive.dir
 /home/yiannis/Documents/CSProject/build/CMakeFiles/encode_oneshot.dir
+/home/yiannis/Documents/CSProject/build/CMakeFiles/all_tests.dir
 /home/yiannis/Documents/CSProject/build/CMakeFiles/test.dir
 /home/yiannis/Documents/CSProject/build/CMakeFiles/edit_cache.dir
 /home/yiannis/Documents/CSProject/build/CMakeFiles/rebuild_cache.dir

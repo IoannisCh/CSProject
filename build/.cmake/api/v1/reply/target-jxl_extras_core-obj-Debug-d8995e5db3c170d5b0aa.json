@@ -1,0 +1,910 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/color_description.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/color_hints.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/decode.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/encode.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/exif.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/time.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/apng.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/apng.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/exr.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/exr.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/jpg.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/jpg.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/jxl.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/jxl.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/pgx.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/pgx.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/pnm.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/pnm.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/enc/npy.cc.o"
+		},
+		{
+			"path" : "lib/CMakeFiles/jxl_extras_core-obj.dir/./extras/dec/gif.cc.o"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"add_compile_options",
+			"target_compile_options",
+			"add_definitions",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"lib/jxl_extras.cmake",
+			"lib/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 297,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 366,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 119,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 218,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 325,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 313,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 94,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 122,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fno-rtti -funwind-tables -fno-omit-frame-pointer -g -fPIC"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fmacro-prefix-map=/home/yiannis/Documents/CSProject/libjxl=."
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-builtin-macro-redefined"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmerge-all-constants"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-builtin-fwrite"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-builtin-fread"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wc++11-compat"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Warray-bounds"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wimplicit-fallthrough"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-register"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wnon-virtual-dtor"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Woverloaded-virtual"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wvla"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fsized-deallocation"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmath-errno"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_ENABLE_SKCMS=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_BUNDLE_SKCMS=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_ENABLE_TRANSCODE_JPEG=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_ENABLE_BOXES=1"
+				},
+				{
+					"fragment" : "-std=c++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "FJXL_ENABLE_AVX512=0"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "HWY_DISABLED_TARGETS=(HWY_SSSE3|HWY_AVX3|HWY_AVX3_ZEN4|HWY_SVE|HWY_SVE2|HWY_SVE_256|HWY_SVE2_128|HWY_RVV)"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "JPEGXL_ENABLE_APNG=1"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "JPEGXL_ENABLE_EXR=1"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "JPEGXL_ENABLE_GIF=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JPEGXL_ENABLE_JPEG=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "JPEGXL_ENABLE_SJPEG=1"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "JXL_EXPORT="
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__DATE__=\"redacted\""
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__TIMESTAMP__=\"redacted\""
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__TIME__=\"redacted\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 17,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl/lib/../third_party/sjpeg/src"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/usr/include/OpenEXR"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl/lib/include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/build/lib/include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl/third_party/highway"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				12,
+				14,
+				16,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fno-rtti -funwind-tables -fno-omit-frame-pointer -g -fPIC"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fmacro-prefix-map=/home/yiannis/Documents/CSProject/libjxl=."
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-builtin-macro-redefined"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmerge-all-constants"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-builtin-fwrite"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-builtin-fread"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wc++11-compat"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Warray-bounds"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wimplicit-fallthrough"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-register"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wnon-virtual-dtor"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Woverloaded-virtual"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wvla"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fsized-deallocation"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmath-errno"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_ENABLE_SKCMS=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_BUNDLE_SKCMS=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_ENABLE_TRANSCODE_JPEG=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DJPEGXL_ENABLE_BOXES=1"
+				},
+				{
+					"fragment" : "-std=c++11"
+				},
+				{
+					"fragment" : "-fexceptions"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "FJXL_ENABLE_AVX512=0"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "HWY_DISABLED_TARGETS=(HWY_SSSE3|HWY_AVX3|HWY_AVX3_ZEN4|HWY_SVE|HWY_SVE2|HWY_SVE_256|HWY_SVE2_128|HWY_RVV)"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "JPEGXL_ENABLE_APNG=1"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "JPEGXL_ENABLE_EXR=1"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "JPEGXL_ENABLE_GIF=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "JPEGXL_ENABLE_JPEG=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "JPEGXL_ENABLE_SJPEG=1"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "JXL_EXPORT="
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__DATE__=\"redacted\""
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__TIMESTAMP__=\"redacted\""
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__TIME__=\"redacted\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 17,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl/lib/../third_party/sjpeg/src"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/usr/include/OpenEXR"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl/lib/include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/build/lib/include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/yiannis/Documents/CSProject/libjxl/third_party/highway"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				18,
+				20
+			]
+		}
+	],
+	"id" : "jxl_extras_core-obj::@306ed2d68c6501e8728f",
+	"name" : "jxl_extras_core-obj",
+	"paths" : 
+	{
+		"build" : "lib",
+		"source" : "lib"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				7,
+				9,
+				10,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/color_description.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/color_description.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/color_hints.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/color_hints.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/decode.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/decode.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/encode.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/encode.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/exif.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/exif.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/packed_image.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/size_constraints.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/time.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/time.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/apng.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/apng.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/apng.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/apng.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 1,
+			"path" : "lib/extras/dec/exr.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/exr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 1,
+			"path" : "lib/extras/enc/exr.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/exr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/jpg.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/jpg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/jpg.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/jpg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/jxl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/jxl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/jxl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/jxl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/pgx.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/pgx.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/pgx.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/pgx.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/pnm.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/pnm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/pnm.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/pnm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/enc/npy.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/enc/npy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "lib/extras/dec/gif.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "lib/extras/dec/gif.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}
