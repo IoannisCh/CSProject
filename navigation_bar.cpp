@@ -31,7 +31,7 @@ void NavigationBar::create(){
     //gchar* label = g_strdup("Bar");
     //toolbar = gtk_frame_new(label);
 
-    // Toolbar withiou name:
+    // Toolbar without name:
     toolbar = gtk_toolbar_new();
     
     //====================
@@ -51,6 +51,15 @@ void NavigationBar::create(){
 
     exitTb = gtk_tool_button_new_from_stock(GTK_STOCK_QUIT);
     gtk_toolbar_insert(GTK_TOOLBAR(toolbar), exitTb, -1);
+
+    g_signal_connect(G_OBJECT(newTb), "clicked", 
+                    G_CALLBACK(on_new_clicked), NULL);
+
+    g_signal_connect(G_OBJECT(openTb), "clicked", 
+                    G_CALLBACK(on_open_clicked), NULL);
+
+    g_signal_connect(G_OBJECT(saveTb), "clicked", 
+                    G_CALLBACK(on_save_clicked), NULL);                
 
     g_signal_connect(G_OBJECT(exitTb), "clicked", 
                      G_CALLBACK(gtk_main_quit), NULL);
