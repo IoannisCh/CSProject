@@ -13,5 +13,7 @@ If downloaded, as it is on a Linux machine  and compiled should generate an exec
 
 Feel free to contact me for comments.
 
+Below is a screenshot of the browser's early stages.
+
 ![RacoonBrowserpng](https://github.com/user-attachments/assets/6d3f7961-7cbc-470a-a413-68f815b0e9b9)
 
