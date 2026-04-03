@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "HistoryManager.h"
+#include "../storage/Istorage.h"
 
 class WebKitWrapper;
 
@@ -16,6 +17,8 @@ public:
 
 private:
     WebKitWrapper* web;
+    FileStorage storage;
+    HistoryManager history;
 };
 
 class BowserController

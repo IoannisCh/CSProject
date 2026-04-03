@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
+#include "../storage/Istorage.h"
 
 struct HistoryEntry
 {
@@ -10,8 +11,14 @@ struct HistoryEntry
 class HistoryManager
 {
 public:
+    HistoryManager(IStorage& storage);
+
     void add(const std::string& url);
-    const std::vector<HistoryEntry>& get() const;
+    const std::vector<HistoryEntry>& getAll() const;
+
+    void save();
+    void load();
 private:
-    std::vector<HistoryEntry> entries;
+    std::vector<HistoryEntry> history;
+    IStorage& storage;
 };
