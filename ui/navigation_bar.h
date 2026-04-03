@@ -7,22 +7,13 @@
 #include "navigation_bar.h"
 #include "bookmark_button.h"
 
+class BrowserController;
+
 class NavigationBar {
-    public:
-        NavigationBar();
-        ~NavigationBar();
-        void create();
-        GtkWidget* getWidget() const;
+public:
+    NavigationBar(BrowserController* controller);
 
-    private:
-        GtkWidget* toolbar;
-        BookmarkButton bookmarkButton;
-
-        GtkToolItem *newTb;
-        GtkToolItem *openTb;
-        GtkToolItem *saveTb;
-        GtkToolItem *sep;
-        GtkToolItem *exitTb;
-};
+private:
+    BrowserController* controller;
 
 #endif // NAVIGATION_BAR_H
