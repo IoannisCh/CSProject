@@ -1,5 +1,4 @@
-#ifndef BROWSER_WINDOW_H
-#define BROWSER_WINDOW_H
+#pragma once 
 
 #include <gtk/gtk.h>
 #include <webkit2/webkit2.h>
@@ -15,11 +14,7 @@ class BrowserWindow{
 
     private:
         GtkWidget* window;
-        NavigationBar navigationBar;
-        WebView webView;
+        GtkWidget* webView;
 
-        static void killWindow(GtkWidget* widget, GtkWidget* window);
-        static gboolean killWebView(WebView* webView, GtkWidget* window);
+       static void on_destroy(GtkWidget* widget, gpointer data);
 };
-
-#endif // BROWSER_WINDOW_H

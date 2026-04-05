@@ -1,6 +1,5 @@
 CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++17 -O2 \
-    -Isrc -Isrc/ui -Isrc/web \
     $(shell pkg-config --cflags gtk+-3.0 webkit2gtk-4.1)
 
 LDFLAGS = \
@@ -8,10 +7,9 @@ LDFLAGS = \
 
 SRC = \
     main.cpp \
-    src/ui/browser_window.cpp \
-    src/ui/navigation_bar.cpp \
-    src/web/web_view.cpp \
-    src/ui/bookmark_button.cpp
+    browser_window.cpp \
+    navigation_bar.cpp \
+    web_view.cpp
 OBJ = $(SRC:.cpp=.o)
 
 EXE = racoon

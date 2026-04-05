@@ -1,5 +1,5 @@
 #include "FileStorage.h"
-#include "../core/HistoryManager.h"
+#include "..core/HistoryManager.h"
 #include <fstream>
 
 void FileStorage::saveHistory(const std::vector<HistoryEntry>& history)

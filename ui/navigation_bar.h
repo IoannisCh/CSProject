@@ -5,7 +5,6 @@
 #include <webkit2/webkit2.h>
 #include <vector>
 #include "navigation_bar.h"
-#include "bookmark_button.h"
 
 class BrowserController;
 
@@ -15,5 +14,7 @@ public:
 
 private:
     BrowserController* controller;
+
+};
 
 #endif // NAVIGATION_BAR_H
