@@ -7,7 +7,7 @@ LDFLAGS = \
     $(shell pkg-config --libs gtk+-3.0 webkit2gtk-4.1)
 
 SRC = \
-    src/main.cpp \
+    main.cpp \
     src/ui/browser_window.cpp \
     src/ui/navigation_bar.cpp \
     src/web/web_view.cpp \
@@ -21,7 +21,7 @@ all: $(EXE)
 $(EXE): $(OBJ)
 	$(CXX) $(OBJ) -o $@ $(LDFLAGS)
 
-%.o: %.cpp
+$(OBJ): %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
