@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
-#include "..storage/Istorage.h"
+#include "Istorage.h"
 
 struct HistoryEntry
 {

@@ -1,5 +1,11 @@
 CXX = g++
+
 CXXFLAGS = -Wall -Wextra -std=c++17 -O2 \
+    -I. \
+    -Iui \
+    -Icore \
+    -Iplatform \
+    -Istorage \
     $(shell pkg-config --cflags gtk+-3.0 webkit2gtk-4.1)
 
 LDFLAGS = \
@@ -7,9 +13,15 @@ LDFLAGS = \
 
 SRC = \
     main.cpp \
-    browser_window.cpp \
-    navigation_bar.cpp \
-    web_view.cpp
+    ui/browser_window.cpp \
+    ui/navigation_bar.cpp \
+    ui/web_view.cpp \
+    core/bookmark_button.cpp \
+    core/BrowserController.cpp \
+    core/HistoryManager.cpp \
+    platform/WebKitWrapper.cpp \
+    storage/FileStorage.cpp
+
 OBJ = $(SRC:.cpp=.o)
 
 EXE = racoon
@@ -17,9 +29,9 @@ EXE = racoon
 all: $(EXE)
 
 $(EXE): $(OBJ)
-	$(CXX) $(OBJ) -o $@ $(LDFLAGS)
+	$(CXX) $(OBJ) -o $(EXE) $(LDFLAGS)
 
-$(OBJ): %.o: %.cpp
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:

@@ -16,7 +16,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#include "ui/browser_window.h"
+#include "browser_window.h"
 
 BrowserWindow::BrowserWindow() 
     : window(nullptr), webView(nullptr) {}
