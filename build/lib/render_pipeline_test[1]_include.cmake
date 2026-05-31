@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/render_pipeline_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/render_pipeline_test[1]_tests.cmake")
-else()
-  add_test(render_pipeline_test_NOT_BUILT render_pipeline_test_NOT_BUILT)
-endif()

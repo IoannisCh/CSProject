@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/color_management_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/color_management_test[1]_tests.cmake")
-else()
-  add_test(color_management_test_NOT_BUILT color_management_test_NOT_BUILT)
-endif()

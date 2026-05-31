@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/jpegli_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/jpegli_test[1]_tests.cmake")
-else()
-  add_test(jpegli_test_NOT_BUILT jpegli_test_NOT_BUILT)
-endif()

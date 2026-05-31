@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/decode_api_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/decode_api_test[1]_tests.cmake")
-else()
-  add_test(decode_api_test_NOT_BUILT decode_api_test_NOT_BUILT)
-endif()

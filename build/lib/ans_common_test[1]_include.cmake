@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/ans_common_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/ans_common_test[1]_tests.cmake")
-else()
-  add_test(ans_common_test_NOT_BUILT ans_common_test_NOT_BUILT)
-endif()
