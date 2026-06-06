@@ -1,5 +1,5 @@
 #pragma once
-#include "Istorage.h"
+#include "IStorage.h"
 
 class FileStorage : public IStorage
 {
