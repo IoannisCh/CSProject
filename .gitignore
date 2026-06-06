@@ -1,8 +1,21 @@
+# Build files
 build/
 *.o
-*.exe
+*.a
+*.so
+
+# Executables
+racoon
+
+# IDE
 .vscode/
-libjxl/
-vcpkg/
-webkit/
-racoon 
+.idea/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Logs
+*.log
