@@ -15,4 +15,43 @@ Feel free to contact me for comments.
 
 # After April of 2026
 
-Continue work on this project, make the changes need to bring this up to date and add more funtionality.
+## RaCoon Browser
+
+A lightweight Linux desktop browser written in C++ using GTK and WebKitGTK.
+
+## Features
+
+- URL navigation
+- WebKit rendering
+- Browsing history
+- Bookmark support
+- Local storage
+
+## Architecture
+
+UI/
+Core/
+Platform/
+Storage/
+
+## Technologies
+
+- C++17
+- GTK3
+- WebKitGTK
+- GNU Make
+
+## Screenshots
+
+(screenshots)
+
+## Build
+
+make
+
+## Roadmap
+
+- Tabs
+- Downloads
+- Settings
+- Ad blocker
