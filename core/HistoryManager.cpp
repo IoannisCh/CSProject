@@ -10,11 +10,11 @@ void HistoryManager::add(const std::string& url)
 
 void HistoryManager::save()
 {
-    storage->saveHistory(history);
+    storage.saveHistory(history);
 }
 void HistoryManager::load()
 {
-    history = storage->loadHistory();
+    history = storage.loadHistory();
 }
 
 const std::vector<HistoryEntry>& HistoryManager::getAll() const

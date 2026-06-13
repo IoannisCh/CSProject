@@ -16,7 +16,7 @@ SRC = \
     ui/browser_window.cpp \
     ui/navigation_bar.cpp \
     ui/web_view.cpp \
-    core/bookmark_button.cpp \
+    ui/bookmark_button.cpp \
     core/BrowserController.cpp \
     core/HistoryManager.cpp \
     platform/WebKitWrapper.cpp \

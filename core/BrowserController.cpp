@@ -10,18 +10,18 @@ BrowserController::BrowserController(WebKitWrapper* web)
     }
 
 void BrowserController::navigate(const std::string& url){
-    web->navigate(url);
+    web->loadURL(url);
 
     history.add(url);
     history.save();
 }
 
 void BrowserController::back(){
-    web->back();
+    web->goBack();
 }
 
 void BrowserController::forward(){
-    web->forward();
+    web->goForward();
 }
 
 void BrowserController::reload(){

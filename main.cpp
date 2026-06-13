@@ -18,7 +18,7 @@
 
 #include "browser_window.h"
 
-BrowserWindow::BrowserWindow() 
+/*BrowserWindow::BrowserWindow() 
     : window(nullptr), webView(nullptr) {}
 
 BrowserWindow::~BrowserWindow() {}
@@ -39,6 +39,7 @@ void BrowserWindow::create() {
     // Show all widgets
     gtk_widget_show_all(window);
 }
+*/
 
 int main(int argc, char *argv[]) {
 

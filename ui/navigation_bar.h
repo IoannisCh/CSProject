@@ -4,7 +4,6 @@
 #include <gtk/gtk.h>
 #include <webkit2/webkit2.h>
 #include <vector>
-#include "navigation_bar.h"
 
 class BrowserController;
 
