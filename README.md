@@ -19,7 +19,7 @@ Feel free to contact me for comments.
 
 A lightweight Linux desktop browser written in C++ using GTK and WebKitGTK.
 
-## Features
+### Features
 
 - URL navigation
 - WebKit rendering
@@ -27,29 +27,29 @@ A lightweight Linux desktop browser written in C++ using GTK and WebKitGTK.
 - Bookmark support
 - Local storage
 
-## Architecture
+### Architecture
 
 UI/
 Core/
 Platform/
 Storage/
 
-## Technologies
+### Technologies
 
 - C++17
 - GTK3
 - WebKitGTK
 - GNU Make
 
-## Screenshots
+### Screenshots
 
 (screenshots)
 
-## Build
+### Build
 
 make
 
-## Roadmap
+### Roadmap
 
 - Tabs
 - Downloads
