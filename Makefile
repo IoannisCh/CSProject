@@ -1,27 +1,38 @@
-CC=g++ -Wall
-CLANG = -std=c++14 -O3
-CCACHE=ccache
-GTK=`pkg-config gtk+-3.0 --cflags`
-GTKMM=`pkg-config gtkmm-3.0 --cflags --libs`
-WEBKITGTK=`pkg-config webkit2gtk-4.0 --cflags --libs`
-#~ SQLITE=`pkg-config sqlite3 --cflags --libs` 
-SQLITE=-lsqlite3
-FILESYS=-lstdc++fs
-BOOST=-lboost_filesystem -lboost_system
+CXX = g++
 
-SRC=main.cpp browser_window.cpp web_view.cpp navigation_bar.cpp bookmark_button.cpp
-OBJ=$(SRC:.cpp=.o)
+CXXFLAGS = -Wall -Wextra -std=c++17 -O2 \
+    -I. \
+    -Iui \
+    -Icore \
+    -Iplatform \
+    -Istorage \
+    $(shell pkg-config --cflags gtk+-3.0 webkit2gtk-4.1)
 
-EXE=RaCoon
+LDFLAGS = \
+    $(shell pkg-config --libs gtk+-3.0 webkit2gtk-4.1)
 
-# 'game' executable
+SRC = \
+    main.cpp \
+    ui/browser_window.cpp \
+    ui/navigation_bar.cpp \
+    ui/web_view.cpp \
+    ui/bookmark_button.cpp \
+    core/BrowserController.cpp \
+    core/HistoryManager.cpp \
+    platform/WebKitWrapper.cpp \
+    storage/FileStorage.cpp
+
+OBJ = $(SRC:.cpp=.o)
+
+EXE = racoon
+
 all: $(EXE)
 
-$(EXE) : $(OBJ)
-	$(CC) $(CLANG) $(OBJ) -o $@ $(WEBKITGTK) $(GTKMM) $(GTK) $(SQLITE) $(FILESYS) 
-	
-.cpp.o:
-	$(CC) $(CLANG) -c $< -o $@ $(WEBKITGTK) $(GTKMM) $(GTK) $(SQLITE) $(FILESYS)
-	
+$(EXE): $(OBJ)
+	$(CXX) $(OBJ) -o $(EXE) $(LDFLAGS)
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
 clean:
-	rm *.o $(EXE)
+	rm -f $(OBJ) $(EXE)

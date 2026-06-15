@@ -1,4 +1,4 @@
-#Repository for the development of the Web Browser.
+# Repository for the development of the Web Browser.
 
 This repository was the work that I have submitted for my final project, for the degree of BSc Computer science.
 
@@ -13,7 +13,45 @@ If downloaded, as it is on a Linux machine  and compiled should generate an exec
 
 Feel free to contact me for comments.
 
-Below is a screenshot of the browser's early stages.
+# After April of 2026
 
-![RacoonBrowserpng](https://github.com/user-attachments/assets/6d3f7961-7cbc-470a-a413-68f815b0e9b9)
+## RaCoon Browser
 
+A lightweight Linux desktop browser written in C++ using GTK and WebKitGTK.
+
+### Features
+
+- URL navigation
+- WebKit rendering
+- Browsing history
+- Bookmark support
+- Local storage
+
+### Architecture
+
+UI/
+Core/
+Platform/
+Storage/
+
+### Technologies
+
+- C++17
+- GTK3
+- WebKitGTK
+- GNU Make
+
+### Screenshots
+
+(screenshots)
+
+### Build
+
+make
+
+### Roadmap
+
+- Tabs
+- Downloads
+- Settings
+- Ad blocker

@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/dct_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/dct_test[1]_tests.cmake")
-else()
-  add_test(dct_test_NOT_BUILT dct_test_NOT_BUILT)
-endif()

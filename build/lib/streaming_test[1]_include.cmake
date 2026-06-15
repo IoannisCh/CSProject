@@ -1,5 +1,0 @@
-if(EXISTS "/home/yiannis/Documents/CSProject/build/lib/streaming_test[1]_tests.cmake")
-  include("/home/yiannis/Documents/CSProject/build/lib/streaming_test[1]_tests.cmake")
-else()
-  add_test(streaming_test_NOT_BUILT streaming_test_NOT_BUILT)
-endif()
