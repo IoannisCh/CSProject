@@ -1,17 +1,17 @@
-CXX = g++
+CXX := g++
+TARGET := racoon
 
-CXXFLAGS = -Wall -Wextra -std=c++17 -O2 \
-    -I. \
-    -Iui \
-    -Icore \
-    -Iplatform \
-    -Istorage \
-    $(shell pkg-config --cflags gtk+-3.0 webkit2gtk-4.1)
+PKGS := gtk+-3.0 webkit2gtk-4.1
 
-LDFLAGS = \
-    $(shell pkg-config --libs gtk+-3.0 webkit2gtk-4.1)
+CPPFLAGS += -I. -Iui -Icore -Iplatform -Istorage
+CPPFLAGS += $(shell pkg-config --cflags $(PKGS) 2>/dev/null)
 
-SRC = \
+CXXFLAGS += -std=c++17 -Wall -Wextra -Wpedantic -O2
+CXXFLAGS += -MMD -MP
+
+LDLIBS += $(shell pkg-config --libs $(PKGS) 2>/dev/null)
+
+SOURCES := \
     main.cpp \
     ui/browser_window.cpp \
     ui/navigation_bar.cpp \
@@ -22,17 +22,25 @@ SRC = \
     platform/WebKitWrapper.cpp \
     storage/FileStorage.cpp
 
-OBJ = $(SRC:.cpp=.o)
+OBJECTS := $(SOURCES:.cpp=.o)
+DEPS := $(OBJECTS:.o=.d)
 
-EXE = racoon
+.PHONY: all clean check-deps
 
-all: $(EXE)
+all: check-deps $(TARGET)
 
-$(EXE): $(OBJ)
-	$(CXX) $(OBJ) -o $(EXE) $(LDFLAGS)
+check-deps:
+	@pkg-config --exists $(PKGS) || \
+	    (echo "Missing GTK/WebKitGTK development dependencies."; \
+	     echo "Check: pkg-config --modversion $(PKGS)"; exit 1)
+
+$(TARGET): $(OBJECTS)
+	$(CXX) $(LDFLAGS) -o $@ $(OBJECTS) $(LDLIBS)
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(EXE)
+	$(RM) $(OBJECTS) $(DEPS) $(TARGET)
+
+-include $(DEPS)
