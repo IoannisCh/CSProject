@@ -7,14 +7,12 @@
 class WebView{
     public:
         WebView();
-        ~WebView();
+        
         void create();
         GtkWidget* getWidget() const;
 
     private:
         WebKitWebView* webView;
-
-        static void titleChanged(WebKitWebView* webView, GParamSpec* pspec, GtkWidget* title);
 };
 
 #endif // WEB_VIEW_H
