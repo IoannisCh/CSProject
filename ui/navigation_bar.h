@@ -9,7 +9,7 @@ class NavigationBar {
     public:
         explicit NavigationBar(BrowserController* controller);
 
-        void create():
+        void create();
         GtkWidget* get_widget() const;
 
     private:

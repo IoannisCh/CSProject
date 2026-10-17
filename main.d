@@ -619,7 +619,7 @@ main.o: main.cpp ui/browser_window.h /usr/include/gtk-3.0/gtk/gtk.h \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvscrollbar.h \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvseparator.h \
  /usr/include/gtk-3.0/gtk/gtk-autocleanups.h ui/navigation_bar.h \
- /usr/include/webkitgtk-4.1/webkit2/webkit2.h \
+ ui/web_view.h /usr/include/webkitgtk-4.1/webkit2/webkit2.h \
  /usr/include/webkitgtk-4.1/webkit/WebKitApplicationInfo.h \
  /usr/include/webkitgtk-4.1/webkit/WebKitDefines.h \
  /usr/include/webkitgtk-4.1/webkit/WebKitAuthenticationRequest.h \
@@ -750,7 +750,7 @@ main.o: main.cpp ui/browser_window.h /usr/include/gtk-3.0/gtk/gtk.h \
  /usr/include/webkitgtk-4.1/webkit/WebKitVersion.h \
  /usr/include/webkitgtk-4.1/webkit/WebKitWebsiteDataAccessPermissionRequest.h \
  /usr/include/webkitgtk-4.1/webkit/WebKitXRPermissionRequest.h \
- /usr/include/webkitgtk-4.1/webkit/WebKitAutocleanups.h ui/web_view.h
+ /usr/include/webkitgtk-4.1/webkit/WebKitAutocleanups.h
 ui/browser_window.h:
 /usr/include/gtk-3.0/gtk/gtk.h:
 /usr/include/gtk-3.0/gdk/gdk.h:
@@ -1421,6 +1421,7 @@ ui/browser_window.h:
 /usr/include/gtk-3.0/gtk/deprecated/gtkvseparator.h:
 /usr/include/gtk-3.0/gtk/gtk-autocleanups.h:
 ui/navigation_bar.h:
+ui/web_view.h:
 /usr/include/webkitgtk-4.1/webkit2/webkit2.h:
 /usr/include/webkitgtk-4.1/webkit/WebKitApplicationInfo.h:
 /usr/include/webkitgtk-4.1/webkit/WebKitDefines.h:
@@ -1553,4 +1554,3 @@ ui/navigation_bar.h:
 /usr/include/webkitgtk-4.1/webkit/WebKitWebsiteDataAccessPermissionRequest.h:
 /usr/include/webkitgtk-4.1/webkit/WebKitXRPermissionRequest.h:
 /usr/include/webkitgtk-4.1/webkit/WebKitAutocleanups.h:
-ui/web_view.h:

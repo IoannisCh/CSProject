@@ -29,7 +29,7 @@ private:
     std::unique_ptr<NavigationBar> navigationBar;
 
     static void onWindowDestroy(GtkWidget* widget, gpointer data);
-}
+};
 
 
 #endif // BROWSER_WINDOW_H
