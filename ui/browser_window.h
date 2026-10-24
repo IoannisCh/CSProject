@@ -7,7 +7,7 @@
 #include "navigation_bar.h"
 #include "web_view.h"
 
-class BroswerController;
+class BrowserController;
 class WebKitWrapper;
 
 class BrowserWindow {
@@ -25,7 +25,7 @@ private:
     
     WebView webView;
     std::unique_ptr<WebKitWrapper> webKitWrapper;
-    std::unique_ptr<BroswerController> browserController;
+    std::unique_ptr<BrowserController> browserController;
     std::unique_ptr<NavigationBar> navigationBar;
 
     static void onWindowDestroy(GtkWidget* widget, gpointer data);

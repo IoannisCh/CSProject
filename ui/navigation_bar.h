@@ -22,7 +22,7 @@ class NavigationBar {
     static void onBackClicked(GtkButton* button, gpointer user_data);
     static void onForwardClicked(GtkButton* button, gpointer user_data);
     static void onReloadClicked(GtkButton* button, gpointer user_data);
-}
+};
 
 
 
